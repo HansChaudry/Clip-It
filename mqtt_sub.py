@@ -17,7 +17,7 @@ if client.connect(os.getenv("HOSTNAME"), int(os.getenv("PORT")), 60) != 0:
     print("Couldn't connect to the mqtt broker")
     sys.exit(1)
 
-client.subscribe("alfred/batCave/batComputer/clip")
+client.subscribe(os.getenv("inTopic"))
 
 try:
     print("Press CTRL+C to exit...")
