@@ -18,11 +18,12 @@ This setup is ideal for scenarios like:
 
 ```
 Clip-It/
+├── scripts/
+│   ├── ClipIt.ps1         # Allows OBS to run initiate ClipIt
 ├── src/
 │   ├── OBS.py             # Handles communication with OBS via WebSocket
 │   ├── mqtt_handler.py    # Manages MQTT connections and message handling
-│   ├── config.py          # Configuration settings for MQTT and OBS
-│   └── main.py            # Entry point to start the Clip-It service
+│   └── main.pyw            # Entry point to start the Clip-It service
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
